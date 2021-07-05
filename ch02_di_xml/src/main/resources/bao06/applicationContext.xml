@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--
+        <import resource="classpath:bao06/spring_School.xml" />
+        <import resource="classpath:bao06/spring_Student.xml" />
+     -->
+    <!--    使用通配符   *  xml文件必须在一个目录下    不能直接在resources下      -->
+    <import resource="classpath:bao06/spring_*.xml"/>
+</beans>

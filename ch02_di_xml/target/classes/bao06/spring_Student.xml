@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--    引用类型独有的自动注入 byType 满足同源关系 -->
+    <bean id="myStudent" class="com.jun.bao06.domain.Student" autowire="byType">
+        <property name="age" value="18" />
+        <property name="name" value="vanessa" />
+    </bean>
+</beans>

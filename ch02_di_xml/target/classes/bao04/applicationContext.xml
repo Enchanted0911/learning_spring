@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--    引用类型独有的自动注入 byName 属性名必须和bean的id一样  -->
+    <bean id="myStudent" class="com.jun.bao04.domain.Student" autowire="byName">
+        <property name="age" value="18" />
+        <property name="name" value="vanessa" />
+    </bean>
+    <bean id="school" class="com.jun.bao04.domain.School">
+        <property name="name" value="万年中学" />
+        <property name="address" value="上饶万年" />
+    </bean>
+</beans>

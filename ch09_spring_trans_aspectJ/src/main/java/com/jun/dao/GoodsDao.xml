@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--  接口全限定名称  -->
+<mapper namespace="com.jun.dao.GoodsDao">
+    <!--    接口方法名称   类型全限定名称  -->
+    <select id="selectGoods" resultType="com.jun.domain.Goods">
+        select id, name, amount, price from goods where id = #{gid}
+    </select>
+    <update id="updateGoods">
+        update goods set amount = amount - #{amount} where id = #{id}
+    </update>
+</mapper>
